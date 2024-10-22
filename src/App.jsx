@@ -1,13 +1,13 @@
-import { useState } from "react";
 import "./App.css";
+import Main from "./components/main/Main";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <div className="w-11/12 m-auto">
+      <Navbar></Navbar>
+      <Main></Main>
+    </div>
   );
 }
 
